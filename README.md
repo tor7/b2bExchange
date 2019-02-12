@@ -13,7 +13,8 @@ Blockchain Australias market API holds not order book.  It simply orchestrates t
 
 1. Buyer is looking for some BTC.  They call the Blockchain Australia API.
 2. Blockchain Australia verfies that request has come from a registered Blockchain Australia business.
-3. The BA API then calls 
+3. The BA API then calls the 3rd parties API
+4. 
 
 ## Version 1
 
@@ -61,7 +62,7 @@ GET https://api.blockchainaustralia.org/quote
       }
     ]
   ],
-  "expires": ""
+  "expires": "0"
 }
 ```
 
@@ -94,7 +95,6 @@ Response
 }
 ```
 
-
 id:  Assigned company id
 timestamp:  Must be within 1 minute of Blockchain Australias server time
 
@@ -112,6 +112,6 @@ Business could call each others APIs directly, however, the request will not be 
 
 ### Examples
 
+Client integration examples:
 c#
-
 NodeJS
