@@ -7,14 +7,20 @@ Some crypto business either have an over supply of coins, such as LROS and Trave
 
 Blockchain Australia proposes a exchange protocol to exchange coins for fiat within the Blockchain Australia ecosystem.  Blockchain Australia will underwrite the transactions.
 
-## Overview
+## Work flow
 
-Blockchain Australias market API holds not order book.  It simply orchestrates the API requests to businesses APIs.  Their API must adhear to the below specificaiton.
+Blockchain Australias market API holds not order book.  It simply orchestrates the API requests to businesses APIs.  Their API must adhear to the below specification.
 
-1. Buyer is looking for some BTC.  They call the Blockchain Australia API.
-2. Blockchain Australia verfies that request has come from a registered Blockchain Australia business.
-3. The BA API then calls the 3rd parties API
-4. Signatures are ESCDSA
+1. Buyer looking to fill a BTC order.  
+2. A HTTP GET request is made to the the Blockchain Australia API.
+3. Blockchain Australia verfies that request has come from a registered Blockchain Australia business.
+4. The BA API then calls the 3rd parties API getting their amount on offer and their price.
+5. A collection of offers is returned to the buyer.
+6. The buyer the submits a HTTP POST to the api with the order details.
+7. The BA API then POST to the sellers api with the order details.
+8. The seller then releases the coins to the address the BA has on file for the buyer.
+9. BA sends cash to the sellers account that is on file.
+10.  BA invoices the buyer on 7 day terms.
 
 ## Version 1
 
