@@ -5,7 +5,7 @@ An exchange protocol for connecting Blockchain Australia businesses to exchange 
 
 Some crypto business either have an over supply of coins, such as LROS and Travel By Bit and require fiat.  Or have an over supply of fiat and require coins, like Get Paid In Bitcoin.  
 
-Blockchain Australia proposes an API driven exchange, to exchange coins.  Blockchain Australia will underwrite the th transactions.
+Blockchain Australia proposes a exchange protocol to exchange coins for fiat within the Blockchain Australia ecosystem.  Blockchain Australia will underwrite the transactions.
 
 ## Overview
 
@@ -25,6 +25,7 @@ The first version will be "headless" and purley driven by apis.  The onboarding 
 * Bank Account Details
 * IP Address request is made from
 * Public Key
+* Invoice email address
 
 ## API Spec
 
