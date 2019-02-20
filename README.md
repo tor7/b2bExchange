@@ -1,5 +1,5 @@
 # b2b Exchange
-Web app for connecting Blockchain Australia businesses to exchange coins and fiat.
+An exchange protocol for connecting Blockchain Australia businesses to exchange coins and fiat.
 
 ## Abstract
 
