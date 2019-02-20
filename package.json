@@ -1,0 +1,22 @@
+{
+  "name": "b2bexchange",
+  "version": "1.0.0",
+  "description": "Web app for connecting Blockchain Australia businesses to exchange coins and fiat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitcoinAus/b2bExchange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BitcoinAus/b2bExchange/issues"
+  },
+  "homepage": "https://github.com/BitcoinAus/b2bExchange#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

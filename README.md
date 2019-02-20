@@ -14,7 +14,7 @@ Blockchain Australias market API holds not order book.  It simply orchestrates t
 1. Buyer is looking for some BTC.  They call the Blockchain Australia API.
 2. Blockchain Australia verfies that request has come from a registered Blockchain Australia business.
 3. The BA API then calls the 3rd parties API
-4. 
+4. Signatures are ESCDSA
 
 ## Version 1
 
@@ -37,6 +37,7 @@ Response
 {
   "name": "Get Paid In Bitcoin",
   "id": "2A0E987E-5928-4874-BE69-FC7E9F45FAF9",
+  "publicKey": "0x00"
 }
 ```
 
@@ -49,6 +50,7 @@ GET https://api.blockchainaustralia.org/quote
   [
     "name": "Get Paid In Bitcoin",
     "id": "2A0E987E-5928-4874-BE69-FC7E9F45FAF9",
+    "expires": "0"
     "coins": [
       "eth": {
         "avalilble": 100.0,
@@ -61,8 +63,7 @@ GET https://api.blockchainaustralia.org/quote
         "pair": "aud"
       }
     ]
-  ],
-  "expires": "0"
+  ]
 }
 ```
 
