@@ -29,9 +29,17 @@ The first version will be "headless" and purley driven by apis.  The onboarding 
 * Name
 * ABN
 * Bank Account Details
-* IP Address request is made from
 * Public Key
 * Invoice email address
+
+Settings.json
+```
+{
+  name: "Get Paid In Bitcoin",
+  abn: "",
+  invoice: ""
+}
+```
 
 ## API Spec
 
